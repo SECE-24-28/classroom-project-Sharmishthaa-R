@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <title>Sample HTML</title>
+    </head>
+    <body>
+        <h1>head</h1>
+        <h2>subhead</h2>
+        <h6>subsubhead </h6><hr>
+        <h4>text formating tags </h4>
+        <p>This is a <b>bold</b> text.</p>
+        <p>This is an <i>italic</i> text.</p>
+        <p>This is an <u>underlined</u> text.</p>
+        <p>This is a <mark>marked</mark> text.</p>
+        <p>This is a <small>small</small> text.</p>
+        <p>This is a <del>deleted</del> text.</p>
+        <p>This is a <ins>inserted</ins> text.</p>
+        <p>This is a <sub>subscript</sub> text.</p>
+        <p>This is a <sup>superscript</sup> text.</p>
+        <p>This is a <code>code</code> text.</p>
+        <p>This is a <strong>strong</strong> text.</p>
+        <p>This is a <em> emphasized</em> text.</p>
+        <pre> this 
+                  is 
+                    a
+                        preformatted 
+                            text
+        </pre>
+        <blockquote>
+            This is a blockquote text.
+        </blockquote>
+        <q>This is a quote</q>
+        <hr>
+        <h4>Listing tag</h4>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>React</li>
+            </ul>
+            <ol>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ol>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+            </dl><hr>
+        <h4>Table tag</h4>
+            <table border="1">
+                <tr>
+                    <th> Name </th>
+                    <th> Age </th>
+                    <th> City </th>
+                </tr>
+                <tr>
+                    <td> Alice </td>
+                    <td> 30 </td>
+                    <td> New York </td>
+                </tr>
+                <tr>
+                    <td> Bob </td>
+                    <td> 25 </td>
+                    <td> Los Angeles </td>
+                </tr>
+                <tr>
+                    <td> Charlie </td>
+                    <td> 35 </td>
+                    <td> Chicago </td>
+                </tr>
+            </table>
+            <table border="1"  cellspacing="4" cellpadding="8">
+            <caption>
+                Employee Details
+            </caption>
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+                <th>Phone</th>
+                <th>Mobile</th>
+            </tr>
+            <tbody>
+            <tr>
+                <td>Sri</td>
+                <td>Erode</td>
+                <td colspan="2">5435456</td>
+            </tr>
+            <tr>
+                <td>Tarika</td>
+                <td rowspan="2">Palladam</td>
+                <td>7877664</td>
+                <td>8976533</td>
+            </tr>
+            <tr>
+                <td>Srinithi</td>
+                <td>8987756</td>
+                <td>9092334</td>
+            </tr>
+            <tr>
+                <td>Sharmishthaa</td>
+                <td>Coimbatore</td>
+                <td>2895774</td>
+                <td>8934784</td>
+            </tr>
+            </tbody>
+        </table>
+        <h4>Image tag</h4>
+     <img src="./assests/image_1.jpg" alt="Sample Image" width="300" height="200">
+     <hr>
+     <h4>Video tag </h4>
+             <video controls>
+            <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4" 
+            type="video/mp4"
+            />
+            </video><br>
+                    <video controls width="300" height="200">
+            <source
+            src="./assests/video.mp4" 
+            type="video/mp4"
+            />
+            </video>
+            <h3>Audio tag</h3>
+        <audio src="assests/sample.mp3" controls></audio>
+        <hr>
+        <h4>Iframe</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1112940.4068888535!2d73.24270925168129!3d9.61018834481502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba84ee37569ae7f%3A0x3c5b1824b6e79192!2sSri%20Eshwar%20College%20of%20Engineering%2C%20Coimbatore!5e0!3m2!1sen!2sin!4v1764654455339!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h4>Form tags</h4>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            Number:<input type="number"/><br/><br/>
+            Time:<input type="time"/><br/><br/>
+            Date:<input type="date"/><br/><br/>
+            Month:<input type="month"/><br/><br/>
+            Week:<input type="week"/><br/><br/>
+            File:<input type="file"/><br/><br/>
+            color:<input type="color"/><br/><br/>
+            Hidden:<input type="hidden" value="hidden value"/><br/><br/>
+            <input type="submit" value="Submit">
+        </form>
+        <!--Radio Buttons-->
+        Gender:<input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female<br/><br/>
+        <!--Checkboxes-->   
+        Skill:<input type="checkbox" name="skill" value="html">HTML
+            <input type="checkbox" name="skill" value="css">CSS
+            <input type="checkbox" name="skill" value="js">JavaScript<br/><br/>
+        <!--Dropdown-->
+        City:
+        <select>
+            <option value="chennai">Chennai</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="delhi">Delhi</option>
+    <hr />
+    <h3>Table of content</h3>
+    <a href="#headingtags">Heading tags</a><br />
+    <a href="#textformatting tags">Text Formatting tags</a><br />
+    <a href="#listingtags">Listing tags</a><br />
+    <a href="#tabletags">Table tags</a><br />
+    <a href="#imagetags">Image tags</a><br />
+    <a href="#hyperlink">Hyperlink</a><br />
+    <a href="#tabletags">Table Tags</a><br />
+    <hr />
+    </body>
+</html>
