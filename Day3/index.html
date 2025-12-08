@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Recharge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">RechargeNow</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>Instant Mobile Recharge</h1>
+            <p>Fast · Secure · Best Offers</p>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search plan / network / data..." onkeyup="searchPlans()">
+    </div>
+
+    <!-- Plans -->
+    <section class="plans">
+        <h2>Available Recharge Plans</h2>
+        <div class="plan-container" id="planContainer">
+            <!-- Plans will load dynamically -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 RechargeNow | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const apiURL = "https://69329c43e5a9e342d26ffe37.mockapi.io/api/plans/plans";
+        const planContainer = document.getElementById("planContainer");
+
+        async function loadPlans() {
+            try {
+                const response = await fetch(apiURL);
+                const plans = await response.json();
+
+                planContainer.innerHTML = "";
+
+                plans.forEach(plan => {
+                    const card = document.createElement("div");
+                    card.classList.add("plan-card");
+                    card.innerHTML = `
+                        <h3>₹${plan.Price}</h3>
+                        <p><b>Network:</b> ${plan.Network}</p>
+                        <p><b>Data:</b> ${plan.Data}</p>
+                        <p><b>Validity:</b> ${plan.Validity}</p>
+                        <p><b>Calls:</b> ${plan.Calls}</p>
+                        <button onclick="goLogin()">Recharge</button>
+                    `;
+                    planContainer.appendChild(card);
+                });
+
+            } catch (error) {
+                planContainer.innerHTML = "<p>Error loading plans...</p>";
+            }
+        }
+
+        function searchPlans() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const cards = document.querySelectorAll(".plan-card");
+
+            cards.forEach(card => {
+                card.style.display = card.innerText.toLowerCase().includes(input) ? "block" : "none";
+            });
+        }
+
+        function goLogin() {
+            window.location.href = "login.html";
+        }
+
+        loadPlans();
+    </script>
+
+</body>
