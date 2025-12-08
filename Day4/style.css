@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.5);
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.logo { color: white; }
+
+.banner {
+    height: 380px;
+    background-image: url('https://wallpaperaccess.com/full/5651990.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.plans {
+    padding: 45px;
+    text-align: center;
+}
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.plan-card {
+    width: 220px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #aaa;
+}
+.plan-card button {
+    background: #0077ff;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+}
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Login & Signup Form */
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #e8f1ff;
+}
+.auth-box {
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #aaa;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.auth-box input {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+.auth-box button {
+    padding: 10px;
+    background: #0077ff;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+.note { font-size: 12px; color: gray; }
