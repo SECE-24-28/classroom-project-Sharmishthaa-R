@@ -1,0 +1,90 @@
+[
+  {
+    "Network": "JIO",
+    "Data": "1gb/day",
+    "Validity": "28 days",
+    "Calls": "NA",
+    "Price": 199,
+    "id": "1"
+  },
+  {
+    "Network": "JIO",
+    "Data": "1.5gb/day",
+    "Validity": "28 days",
+    "Calls": "Unlimited",
+    "Price": 300,
+    "id": "2"
+  },
+  {
+    "Network": "JIO",
+    "Data": "2gb/day",
+    "Validity": "90 days",
+    "Calls": "Unlimited",
+    "Price": 899,
+    "id": "3"
+  },
+  {
+    "Network": "JIO",
+    "Data": "3gb/day",
+    "Validity": "5 days",
+    "Calls": "Unlimited",
+    "Price": 150,
+    "id": "4"
+  },
+  {
+    "Network": "JIO",
+    "Data": "2.3gb/day",
+    "Validity": "365 days",
+    "Calls": "Unlimited",
+    "Price": 3599,
+    "id": "5"
+  },
+  {
+    "Network": "AIRTEL",
+    "Data": "1gb/day",
+    "Validity": "29days",
+    "Calls": "Unlimited",
+    "Price": 299,
+    "id": "6"
+  },
+  {
+    "Network": "AIRTEL",
+    "Data": "Data 8",
+    "Validity": "Validity 8",
+    "Calls": "Calls 8",
+    "Price": 57,
+    "id": "8"
+  },
+  {
+    "Network": "BSNL",
+    "Data": "Data 11",
+    "Validity": "Validity 11",
+    "Calls": "Calls 11",
+    "Price": 67,
+    "id": "11"
+  },
+  {
+    "Network": "BSNL",
+    "Data": "Data 12",
+    "Validity": "Validity 12",
+    "Calls": "Calls 12",
+    "Price": 77,
+    "id": "12"
+  },
+  {
+    "Network": "VI",
+    "Data": "Data 18",
+    "Validity": "Validity 18",
+    "Calls": "Calls 18",
+    "Price": 98,
+    "id": "18"
+  },
+  {
+    "Network": "VI",
+    "Data": "Data 19",
+    "Validity": "Validity 19",
+    "Calls": "Calls 19",
+    "Price": 84,
+    "id": "19"
+  }
+]

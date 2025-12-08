@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+    <form class="auth-box" onsubmit="return registerUser()">
+        <h2>Create Account</h2>
+
+        <input type="text" id="signupName" placeholder="Full Name" required>
+        <input type="email" id="signupEmail" placeholder="Email" required>
+
+        <input type="password" id="signupPassword" placeholder="Password" required>
+        <p class="note">Password must be 8+ characters & include numbers and symbols</p>
+
+        <button type="submit">Signup</button>
+
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
