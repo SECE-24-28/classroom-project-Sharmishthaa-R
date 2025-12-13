@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional custom styles */
+body {
+ @apply bg-gradient-to-br from-stone-100 via-emerald-100 to-teal-100;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Remove default browser margins */
+body, html {
+  margin: 0;
+  padding: 0;
+}
